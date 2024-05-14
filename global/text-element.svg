@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Vrstva_1" data-name="Vrstva 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 274 125">
+  <defs>
+    <style>
+        @font-face {
+    font-family: 'ExistujeSoraBarevna';
+    src: url('existuje.sora.barevnaVF.woff2') format('woff2');
+  }
+      .logo {
+        fill: #fff;
+      }
+
+      .accent {
+        fill: #b700ff;
+      }
+
+      .brand-text {
+        fill: #fff;
+        z-index:99;
+        font-family: 'ExistujeSoraBarevna';
+        font-size: 35.3134px;
+        font-variation-settings: 'wght' 381;
+      }
+    </style>
+  </defs>
+  <g class="brand-text" transform="translate(0 30)">
+  <text property="text-radek-1" x="0" y="0">† pdf manuál</text>
+  <text property="text-radek-2" x="0" y="42.376">je mrtvý…</text>
+  <text x="0" y="84.752">existuje.ônline</text>
+  </g>
+  </svg>
+

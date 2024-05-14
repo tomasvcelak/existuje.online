@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'ExistujeSoraBarevna';
+    src: url('global/existuje.sora.barevnaVF.woff2') format('woff2');
+  }
+  
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+    background-color: #000000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'ExistujeSoraBarevna', sans-serif;
+}
+
+.brand-font{
+    font-family: 'ExistujeSoraBarevna', sans-serif;
+ } 
+
+ .content {
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    height: 100%;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 100%;
+  }
+
+  .row-span {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+
+  .col-button {
+  padding-top: 2.5em;
+  }
+
+.container {
+    position: relative;
+    width: calc(100% - 2 * var(--diagonal-margin));
+    height: calc(100% - 2 * var(--diagonal-margin));
+    top: var(--diagonal-margin);
+    left: var(--diagonal-margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.logo-object{
+  translate: 0 -43%;
+}
+
+.logo-stripe {
+    height: var(--stripe-height);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+
+.responsive-logo {
+    height: 100%;
+}
+
+.logo-left,
+.logo-right {
+    flex-shrink: 0;
+} 
+
+.logo-between {
+    background-image: url(global/logo/logo-between.svg);
+    flex: auto;
+    object-fit: contain;
+    max-height: 100%; 
+    margin-right: -2px;
+    margin-left: -2px;
+    position: relative;
+    left: -2px;
+  }
+
+.resp {
+  background-color: blue;
+  flex-grow: 1;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.button-primary,
+.button-secondary {
+  font-family: 'ExistujeSoraBarevna', sans-serif;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 5em 0.8em 3em;
+  border: none;
+  border-radius: 2em;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  right: 0em;
+  width: 3em;
+}
+
+.icon-primary,
+.icon-secondary {
+  display: none;
+}
+
+.button-primary {
+  border: solid 0.12em #000000;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.button-primary .icon-primary {
+  display: inline-block;
+}
+
+.button-primary .icon-primary > use:first-child {
+  fill: #000000;
+}
+
+.button-primary .icon-primary > use:last-child {
+  display: inline-block;
+  fill: #ffffff;
+}
+
+.button-primary:hover .icon-primary > use:first-child {
+  fill: #b700ff;
+}
+
+.button-primary:hover .icon-primary > use:last-child {
+  display: inline-block;
+  fill: #ffffff;
+}
+
+.button-secondary {
+  border: solid 0.12em #ffffff;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.button-secondary .icon-secondary {
+  display: inline-block;
+}
+
+.button-secondary .icon-secondary > use:first-child {
+  fill: #ffffff;
+}
+
+.button-secondary .icon-secondary > use:last-child {
+  display: inline-block;
+  fill: #000000;
+}
+
+.button-secondary:hover .icon-secondary > use:first-child {
+  fill: #b700ff;
+}
+
+.button-secondary:hover .icon-secondary > use:last-child {
+  display: inline-block;
+  fill: #000000;
+}
+
+.download-section {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.download-section h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+
+.download-section p {
+  font-size: 1.8em;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.download-link-section{
+  margin: 2em;
+}
+
+
+
+@media (max-width: 576px) {
+  .button-container {
+    flex-direction: column;
+  }
+  .col-button {
+    padding-top: 0em;
+  }
+
+  .download-section h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-weight: 500;
+  }
+  
+  .download-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 1em;
+  }
+  
+  .download-link-section{
+    margin: 2em;
+  }
+  
+}
+
